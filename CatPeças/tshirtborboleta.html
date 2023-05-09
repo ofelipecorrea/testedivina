@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/tshirtborbo.css">
+    <script src="../js/valor.js"></script>
+    <script src="../js/cor.js"></script>
+    <script src="../js/valortotal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>T-SHIRT BORBOLETA</title>
+</head>
+
+<body>
+    <header class="Menu">
+        <div class="container">
+            <a href="../index.html">
+                <img src="../img/Logo.jpg" alt="Logo" class="logo">
+            </a>
+            <ul class="menu_items">
+                <a href="tshirt.html">
+                    <li class="menu_item">T-SHIRT</li>
+                </a>
+                <a href="#">
+                    <li class="menu_item">MANGA LONGA</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="slider">
+
+            <div class="slides">
+                <!-- Radio Button -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- Radio Button -->
+
+                <!-- Imagem Slide -->
+                <div class="slide first">
+                    <img src="../img/tborboleta.jpg" alt="borboleta1">
+                </div>
+
+                <div class="slide">
+                    <img src="../img/tborboleta2.jpg" alt="borboleta1">
+                </div>
+                <div class="slide">
+                    <img src="../img/tborboleta3.webp" alt="borboleta1">
+                </div>
+
+                <!-- Imagem Slide -->
+
+                <!-- Nagigation Slide -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!-- Nagigation Slide -->
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+        <div class="texto">
+            <h3 class="titulo">T-SHIRT BORBOLETA</h3>
+            <div>
+                <div id="valorTotal">Preço</div>
+                <div id="cor">Cor</div>
+            </div>
+            <div>
+                <div class="botaocor"><button onclick="mostrarCor1()"></button></div>
+            </div>
+            <div class="tamanhos">
+                <div class="botaotam">
+                    <h3 class="numeros">P</h3>
+                    <input class="numero" type="number" id="quantidade1" placeholder="0">
+                    <button onclick="adicionarQuantidade(1)"></button>
+                </div>
+                <div class="botaotam">
+                    <h3 class="numeros">M</h3>
+                    <input class="numero" type="number" id="quantidade2" placeholder="0">
+                    <button onclick="adicionarQuantidade(2)"></button>
+                </div>
+                <div class="botaotam">
+                    <h3 class="numeros">G</h3>
+                    <input class="numero" type="number" id="quantidade3" placeholder="0">
+                    <button onclick="adicionarQuantidade(3)"></button>
+                </div>
+                <div class="botaotam">
+                    <h3 class="numeros">G1</h3>
+                    <input class="numero" type="number" id="quantidade4" placeholder="0">
+                    <button onclick="adicionarQuantidade(4)"></button>
+                </div>
+                <div class="botaotam">
+                    <h1 class="numeros">G2</h1>
+                    <input class="numero" type="number" id="quantidade5" placeholder="0">
+                    <button onclick="adicionarQuantidade(5)"></button>
+                </div>
+                <div class="botaotam">
+                    <h3 class="numeros">G3</h3>
+                    <input class="numero" type="number" id="quantidade6" placeholder="0">
+                    <button onclick="adicionarQuantidade(6)"></button>
+                </div>
+            </div>
+            
+            <div id="valorTotal">
+                <button class="botaototal" onclick="mostrarValor6()">Calcular Valor Total</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

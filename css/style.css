@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.logo {
+    width: 300px;
+}
+
+
+.titulo_pijama {
+    text-align: center;
+    margin: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.Produtos {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.menu_items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+.menu_item {
+    margin-left: 1.5rem;
+}
+
+.texto {
+    text-align: center;
+    width: 400px;
+}
+
+.texto2 {
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    background-color: #e7b2a4;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.imagem {
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 250px;
+        padding-top: 55px;
+    }
+
+    .menu_items {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-size: 25px;
+    }
+
+
+}
